@@ -11,7 +11,7 @@ const app = express();
 
 app.use(bodyParser.json());
 const cors = require('cors');
-app.use(cors({ origin: 'https://myntra-clone-qo8j.vercel.app' }));
+app.use(cors({ origin: 'https://myntra-clone-qo8j.vercel.app/' }));
 //  app.use(express.static(path.join(__dirname, "/myntra-clone/dist")));
 //  app.get("*", (req, res) => {
 //    res.sendFile(path.resolve(__dirname, "myntra-clone","dist", "index.html"));
