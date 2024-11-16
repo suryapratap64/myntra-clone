@@ -1,0 +1,120 @@
+/* Root styles */
+.desktop-navContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  .desktop-main {
+    padding: 0 17px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    border-bottom: none;
+    -webkit-transition: left .2s ease-out, width .2s ease-out;
+    transition: left .2s ease-out, width .2s ease-out;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  .desktop-navLink {
+    position: relative;
+  }
+  
+  .desktop-main {
+    color: #333;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .desktop-main:hover {
+    border-bottom-color: #ee5f73;
+  }
+  
+  /* Submenu container */
+  .desktop-backdropStyle {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 10;
+  }
+  
+  .desktop-navLink:hover .desktop-backdropStyle {
+    display: block;
+  }
+  
+  /* Pane content layout */
+  .desktop-paneContent {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .desktop-categoryContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  /* Column layout for categories */
+  .desktop-oddColumnContent, 
+  .desktop-evenColumnContent {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .desktop-navBlock {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .desktop-categoryName {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ee5f73;
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+  }
+  
+  .desktop-categoryLink {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+  }
+  
+  
+  
+  /* Divider line */
+  .desktop-hrLine {
+    height: 1px;
+    background-color: #eee;
+    margin: 10px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .desktop-paneContent {
+      flex-direction: column;
+    }
+  
+    .desktop-main {
+      padding: 8px 10px;
+    }
+  }
+  
