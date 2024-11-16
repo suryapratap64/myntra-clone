@@ -14,12 +14,7 @@ app.use(bodyParser.json());
 //  app.get("*", (req, res) => {
 //    res.sendFile(path.resolve(__dirname, "myntra-clone","dist", "index.html"));
 //  });
-app.use(cors({
-  origin:["https://myntra-clone-cgvu.vercel.app/"],
-  methods:["post"],
-  credentials:true
-}
-             ));
+
 
 
 app.use((req, res, next) => {
