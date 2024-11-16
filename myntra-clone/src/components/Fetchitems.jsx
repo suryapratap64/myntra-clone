@@ -14,7 +14,7 @@ const FetchItems = () => {
     const signal = controller.signal;
 
     dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("http://localhost:8080/items", { signal })
+    fetch("myntra-clone-dun-six.vercel.app", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchDone());
