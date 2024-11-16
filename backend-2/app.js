@@ -15,10 +15,6 @@ const allowedOrigins = [
   "https://myntra-clone-qo8j.vercel.app",
   "https://myntra-clone-cgvu.vercel.app",
 ];
-app.use(express.static(path.join(__dirname, 'build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-});
 
 app.use(cors({
   origin: function (origin, callback) {
